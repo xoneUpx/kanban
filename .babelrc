@@ -1,0 +1,12 @@
+{
+  "presets": [
+  "react",
+  "stage-0"
+],
+//needs fixing 
+//env": {"start": {
+//"presets": [
+//  "react-hmre"
+//
+// 
+}
