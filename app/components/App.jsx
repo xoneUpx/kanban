@@ -1,7 +1,7 @@
 import React from 'react';
 import uuid from 'node-uuid';
 import Notes from './Notes.jsx';
-import { Button, Button2, Button3, Button4 } from './But.jsx'
+import { Button, Button2, Button3, Button4, Button5 } from './But.jsx'
 //import Note from './Note.jsx';
 //const App =() =>(<div><Notes2 /></div>);
 //export default App;
@@ -12,7 +12,7 @@ export default class App extends React.Component {
       notes : [
         {
           id: uuid.v4(),
-          task: 'babelrc issues? ',
+          task: 'babelrc issuesss? ',
           date: new Date().toString()
         }
       ]
@@ -22,14 +22,16 @@ export default class App extends React.Component {
   render () {
 //    const notes = this.state.notes;
     const name2="loli";
+    const ot = { name: 'a', name2: 'b'};
     return (
       <div>
         <button className = "add-note" onClick = {this.addNote}>+</button> 
         <Notes notes = { this.state.notes } onDelete = { this.deleteNote } onNoteClick= { this.activateNoteEdit } onEdit={ this.editNote } />
        <Button />
-      <Button2 name="lol3" name2={name2} />
-      <Button3 name={"lol3"} />
-      <Button4 name="lol3" />
+      <Button2 name="lol3" name2={name2} name3='loliiii'/>
+      <Button3 name="lol3" name2='name2'/>
+      <Button4 name="lol4" />
+      <Button5 {...ot} />
       </div>
     )
   }
@@ -40,7 +42,7 @@ export default class App extends React.Component {
     this.setState({
       notes: this.state.notes.concat([{
         id: uuid.v4(),
-        task: 'a new 1',
+        task: 'a new 11',
         date: new Date().toString()
       }])
     })
@@ -50,7 +52,7 @@ export default class App extends React.Component {
     e.stopPropagation()
     this.setState({
       notes: this.state.notes.filter(
-        note => note.id !== id 
+        note => { return note.id !== id} 
     )
     })
   }

@@ -3,7 +3,8 @@ import Note from './Note.jsx';
 import Editable from './Editable.jsx';
 //import { connect } from 'react-redux';
 
-export default ({notes, onNoteClick = () => {}, onEdit = () => {}, onDelete = () => {}}) => (
+//export default ({notes, onNoteClick = () => {}, onEdit = () => {}, onDelete = () => {}}) => (
+export default ({notes, onNoteClick, onEdit, onDelete }) => (
   <ul className = "notes">
     {
       notes.map (

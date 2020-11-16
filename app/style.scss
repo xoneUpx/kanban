@@ -9,4 +9,18 @@ h3 {
     }
 h3:hover {
   font-family: arial;
+  color: yellow;
+}
+ul {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  flex: 2 1 110px;
+  
+}
+li {
+  font-family: Roboto;
+  justify-content: center;
+  display: flex;
+  color: red;
 }
