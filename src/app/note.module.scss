@@ -1,0 +1,14 @@
+.notez   { 
+  background-color: yellow;
+  border: 2px solid black;
+  min-height: 200px;
+  max-width: 200px;
+  min-width: 140px;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  justify-content: space-between;
+  &:hover {
+    background: white;
+  }
+}

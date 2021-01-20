@@ -1,0 +1,18 @@
+.formz   { 
+  background-color: yellow;
+  display: flex 1 1;
+  flex-direction: column;
+  border: 2px solid black;
+  &:hover {
+    background-color: white;
+    }
+  .testing {
+    color: red;
+    font-family: Arial;
+    font-size: 53px;
+  }
+}
+.test {
+  color: black;
+
+}

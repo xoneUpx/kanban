@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css?family=Karla:weight@400;700&display=swap");
+
+$font: "Karla", sans-serif;
+$primary-color: #3e6f9e;
+
+h3 {
+    font-family: $font;
+      color: $primary-color;
+    }
+h3:hover {
+  font-family: arial;
+  color: black;
+}
+ ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+.editing { color: cyan;}  
+.delete { background-color: red; font-size: 41px;}
+}
+ .lane.ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+.editing { color: cyan;}  
+.delete { background-color: red; font-size: 41px;}
+}
+[id*=app] {
+
+  background-color: $primary-color;
+  border: 10px black solid;
+  display: flex;
+  flex-direction: row;
+}
+#columnz {
+  background-color: pink;
+  border: 10px black solid;
+  grid-column: 3 / auto;
+  grid-row: 1 / auto;
+}
+.lanes {
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+}
+.test { font-family: Roboto;
+font-size: 34px;}

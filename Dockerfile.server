@@ -1,0 +1,7 @@
+FROM node
+WORKDIR /opt/server
+EXPOSE 9900
+ENV PATH /opt/server/node_modules/.bin:$PATH
+COPY server/package.json ./
+COPY server/package-lock.json ./
+RUN npm install 

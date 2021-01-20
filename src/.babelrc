@@ -1,0 +1,13 @@
+{
+  "presets": [
+  "react",
+  "stage-0"
+],
+//"plugins": ["react-hot-loader/babel"]
+////needs fixing 
+//"env": {"start": {
+//"presets": [
+//  "react-hmre"]
+//
+// 
+}

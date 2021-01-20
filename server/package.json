@@ -1,0 +1,17 @@
+{
+    "name": "docker_web_app",
+    "version": "1.0.0",
+    "description": "Node.js on Docker",
+    "author": "First Last <first.last@example.com>",
+    "scripts": {
+        "start": " nodemon --inspect server.js"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "cors": "^2.8.5",
+        "express": "",
+        "express-promise-router": "^4.0.1",
+        "nodemon": "",
+        "pg": "^8.5.1"
+    }
+}

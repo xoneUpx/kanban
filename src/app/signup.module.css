@@ -1,0 +1,10 @@
+.formz   { 
+  background-color: yellow;
+  display: flex 1 1;
+  flex-direction: column;
+  border: 12px solid black;
+}
+.test {
+  color: red;
+
+}
