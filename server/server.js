@@ -3,7 +3,7 @@ const db = require('./db')
 const port = process.env.PORT || '9900'; 
 const host = process.env.HOST || '0.0.0.0'; 
 const app = express();
-const router = require('./router.js');
+const router = require('./routers/router_main.js');
 //app.use(router);
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));

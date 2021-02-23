@@ -39,7 +39,7 @@ const App =(props) => {
   </Route>
   <Route path='/debug' component={Debug} />
   <Route exact path='/id' component={Id} />
-  <Route exact path='/id/:id2' component={Id2} />
+  <Route exact path='/id/:id2' children={(props) => (<Id2 link="id" history={props.history} />)} />
   <Route exact path='/signin' children={<SignIn email='' pass='' />} />
   <Route exact path='/signup' render={()=> user ? (<Redirect to='/' />) : (<SignUp displayName='' email='' pass='' confpass='' />)} />
   </Switch></DndProvider></div>)};

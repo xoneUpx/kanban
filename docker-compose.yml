@@ -46,10 +46,12 @@ services:
     ports:
       - 5555:5432
     volumes:
-      - './test-db:/var/lib/postrgresql/data'
+      - './test-db:/var/lib/postgresql/testdata'
+      - './test-db/test.sql:/docker-entrypoint-initdb.d/test.sql'
     environment:
       - POSTGRES_USER=postgres
       - POSTGRES_PASSWORD=postgres
+        #      - PGDATA=/var/lib/postgresql/testdata
 
   nginx:    
     image: nginx:alpine
