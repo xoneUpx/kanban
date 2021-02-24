@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SignUp from '../signup.module.scss';
+//import axios from "axios";
 import { auth, createUserProfileDocument, signOut } from '../firebase/firebase.utils.js';
 
 export default (props) => { 
@@ -33,6 +34,7 @@ export default (props) => {
     <input type='password' id='confpass' value={state.confpass} placeholder='placeholder' onChange={change('confpass')} />
     <div><button type='submit' onClick={submit}>email</button></div>
     <div><button type='submit' onClick={signOut}>out</button></div>
+    {/*<div><button type='submit' onClick={async ()=>{ const res = await axios.post('http://localhost:8080/lol/post/', state); console.log(res)}}>postax</button></div>*/}
     </form>
 
     

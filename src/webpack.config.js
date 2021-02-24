@@ -14,7 +14,8 @@ const common = {
   },
   output: {
     path:PATHS.build,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
+    publicPath: '/kanban/'
   },
   module: {
     rules: [
@@ -26,7 +27,6 @@ const common = {
      { test: /\.jsx?$/,
  //      exclude: /node_modules/,
        //use: ['react-hot-loader', 'babel-loader?cacheDirectory' ],
-       exclude: /node_modules/,
        use: [ 'babel-loader?cacheDirectory' ],
        include: PATHS.app
       
